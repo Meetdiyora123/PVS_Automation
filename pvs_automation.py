@@ -8,7 +8,7 @@ Workflow:
      {date} placeholder replaced automatically)
   4) Group rows by pack_id. For each pack: call getpackdetails API once,
      then build one quadrant-grouped PVS payload per drop.
-     POST each payload to PVS analysis API.
+     Init vision system, then POST each payload to PVS analysis API.
   5) If 401 received, refresh token and retry once.
   6) Log results
 """
@@ -369,7 +369,74 @@ def save_payloads(payloads, output_dir, pack_id):
         logger.info(f"  Saved: {filepath}")
 
 
+# ── Vision system init ─────────────────────────────────────────
+
+def init_vision_system(http, pvs_base_url, station_type, station_id, msg_id=2):
+    url = f"{pvs_base_url}/api/initiate_vision_system"
+
+    params = {
+        "station_type": station_type,
+        "station_id": station_id,
+        "msg_id": msg_id,
+        "cmd": "init_camera",
+    }
+
+    logger.info(
+        f"  Initialising vision system "
+        f"(station_type={station_type}, station_id={station_id})..."
+    )
+
+    resp = http.get(url, params=params, timeout=30)
+
+    logger.info(f"  Init HTTP status: {resp.status_code}")
+
+    body = resp.json()
+
+    logger.info(f"  Init response: {json.dumps(body, indent=2)}")
+
+    logger.info("  Waiting 5 seconds for vision system to become ready...")
+    time.sleep(2)
+
+    return body
+
+
+def stop_vision_system(http, pvs_base_url, station_type, station_id, msg_id=2):
+    """Stop the PVS camera after analysis is complete."""
+    url = f"{pvs_base_url}/api/stop_vision_system"
+    params = {
+        "station_type": station_type,
+        "station_id": station_id,
+        "msg_id": msg_id,
+        "cmd": "stop_camera",
+    }
+    logger.info(
+        f"  Stopping vision system "
+        f"(station_type={station_type}, station_id={station_id})..."
+    )
+    resp = http.get(url, params=params, timeout=30)
+    body = resp.json()
+    logger.info(f"  Stop response: {body}")
+    return body
+
 def post_to_pvs(http, payload, api_url):
+    logger.info("=" * 80)
+    logger.info(
+        f"PVS REQUEST: drop={payload.get('drop_number')}, "
+        f"station_type={payload.get('station_type')}, "
+        f"station_id={payload.get('station_id')}"
+    )
+
+    for q in ("1", "2", "3", "4"):
+        qdata = payload["data"].get(q, {})
+
+        logger.info(
+            f"Quadrant {q}: "
+            f"slot={qdata.get('slot_number')} "
+            f"device={qdata.get('device_id')} "
+            f"system={qdata.get('system_id')} "
+            f"drug_count={len(qdata.get('drug_data', {}))}"
+        )
+
     resp = http.post(
         api_url,
         headers={
@@ -379,7 +446,20 @@ def post_to_pvs(http, payload, api_url):
         data={"args": json.dumps(payload)},
         timeout=60,
     )
-    return resp.json()
+
+    logger.info(f"PVS HTTP Status: {resp.status_code}")
+
+    time.sleep(2)
+
+    result = resp.json()
+
+    logger.info(
+        f"PVS RESPONSE: {json.dumps(result, indent=2)}"
+    )
+
+    logger.info("=" * 80)
+
+    return result
 
 
 def process_pack(http, pack_row, config, filter_drops=None, save_dir=None):
@@ -390,6 +470,12 @@ def process_pack(http, pack_row, config, filter_drops=None, save_dir=None):
 
     getpack_base = config["api"]["getpackdetails_base_url"]
     pvs_url = config["api"]["perform_vision_system_analysis_url"]
+    # Base URL for the PVS host (scheme + host + port, no path).
+    # Derived from the analysis URL if not set separately in config.
+    pvs_base_url = config["api"].get(
+        "pvs_base_url",
+        "/".join(pvs_url.split("/")[:3]),  # e.g. http://172.29.0.68:13000
+    )
     request_id = config.get("request_id", 54)
     msg_id = config.get("msg_id", 124)
 
@@ -413,14 +499,53 @@ def process_pack(http, pack_row, config, filter_drops=None, save_dir=None):
 
     all_ok = True
     for drop_number, payload in payloads:
+        station_type = payload.get("station_type", 21)
+        station_id = payload.get("station_id", 21000)
         slots_info = ", ".join(filter(None, (payload["data"][q]["slot_number"] for q in ("1", "2", "3", "4"))))
+
+        # ── Init vision system before each drop analysis ──────────
+        try:
+            init_vision_system(http, pvs_base_url, station_type, station_id)
+        except requests.RequestException as e:
+            logger.error(f"  FAILED vision system init for drop {drop_number}: {e}")
+            all_ok = False
+            continue
+
+        for q in ("1", "2", "3", "4"):
+            qdata = payload["data"].get(q, {})
+
+            logger.info(
+                f"Drop={drop_number} "
+                f"Q={q} "
+                f"Slot={qdata.get('slot_number')} "
+                f"Device={qdata.get('device_id')} "
+                f"System={qdata.get('system_id')} "
+                f"DrugCount={len(qdata.get('drug_data', {}))}"
+            )
+
         logger.info(f"  POSTing drop {drop_number} (slots: {slots_info or '?'})...")
         try:
             pvs_resp = post_to_pvs(http, payload, pvs_url)
+
+            resp_code = pvs_resp.get("resp_code")
+            description = pvs_resp.get("description")
+            data_code = pvs_resp.get("data")
+
+            if data_code == 21209:
+                logger.error(
+                    f"DROP {drop_number}: "
+                    f"PVS NOT INITIALIZED "
+                    f"(resp_code={resp_code}, "
+                    f"description={description}, "
+                    f"data={data_code})"
+                )
+
             logger.info(f"    PVS response: {pvs_resp}")
         except requests.RequestException as e:
             logger.error(f"    FAILED PVS POST: {e}")
             all_ok = False
+        finally:
+            pass
 
     return all_ok
 
@@ -447,15 +572,68 @@ def main():
 
     if args.test_pack:
         tp = config.get("test_pack", {})
-        pack_row = {
-            "pack_id": args.test_pack,
-            "device_id": tp.get("device_id"),
-            "system_id": tp.get("system_id"),
-            "company_id": tp.get("company_id"),
-        }
-        missing = [k for k, v in pack_row.items() if v is None]
-        if missing:
-            logger.error(f"Missing test_pack config values: {missing}. Check config.json")
+
+        device_ids = tp.get("device_ids", [])
+        system_id = tp.get("system_id")
+        company_id = tp.get("company_id")
+
+        if not device_ids:
+            logger.error("No device_ids configured in test_pack")
+            sys.exit(1)
+
+        pack_row = None
+
+        for device_id in device_ids:
+            try:
+                logger.info(
+                    f"Trying pack {args.test_pack} "
+                    f"with device_id={device_id}, "
+                    f"system_id={system_id}, "
+                    f"company_id={company_id}"
+                )
+
+                getpack_data = get_pack_details(
+                    http,
+                    args.test_pack,
+                    device_id,
+                    system_id,
+                    company_id,
+                    config["api"]["getpackdetails_base_url"]
+                )
+
+                payloads = build_all_drop_payloads(
+                    getpack_data,
+                    system_id
+                )
+
+                if payloads:
+                    logger.info(
+                        f"Pack {args.test_pack} valid using device_id={device_id} "
+                        f"({len(payloads)} payloads generated)"
+                    )
+
+                    pack_row = {
+                        "pack_id": args.test_pack,
+                        "device_id": device_id,
+                        "system_id": system_id,
+                        "company_id": company_id,
+                    }
+                    break
+
+                logger.warning(
+                    f"device_id={device_id} generated 0 payloads, trying next device"
+                )
+
+            except Exception as e:
+                logger.warning(
+                    f"device_id={device_id} failed: {e}"
+                )
+
+        if not pack_row:
+            logger.error(
+                f"Could not find pack {args.test_pack} "
+                f"using any configured device_id"
+            )
             sys.exit(1)
         if args.no_post:
             getpack_base = config["api"]["getpackdetails_base_url"]

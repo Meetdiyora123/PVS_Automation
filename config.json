@@ -1,34 +1,34 @@
 {
   "auth": {
-    "url": "https://mq-auth.dosepack.com/api/login",
+    "url": "https://s-auth.dosepack.com/api/login",
     "data": {
-      "username": "support",
+      "username": "nancyr",
       "password": "SGVsbG9AMTIz",
       "client_id": "dp-web-app",
       "scope": "dp-full-scope",
       "response_type": "token",
-      "state": "hFOXaLygvwlfoYarakdJ",
-      "company_id": "5"
+      "state": "lYZpVozCJpcaDslSEiEJ",
+      "company_id": "2"
     }
   },
   "database": {
     "host": "172.16.7.86",
     "port": 3306,
-    "database": "dpchat_qa_01",
-    "user": "qa_write",
-    "password": "cWFfd3JpdGVfcGFzc3dvcmQ=",
+    "database": "dpws_dev_05",
+    "user": "dev_write",
+    "password": "OTgkaW5tZWRp",
     "date": "",
     "query": "SELECT pd.id AS pack_id,\n       pd.company_id,\n       pd.system_id,\n       pad.device_id_id AS device_id\nFROM drug_tracker d\nJOIN pack_analysis pa ON pa.pack_id_id = d.pack_id_id\nJOIN pack_analysis_details pad ON pad.analysis_id_id = pa.id\nJOIN pack_details pd ON pd.id = pa.pack_id_id\nWHERE DATE(CONVERT_TZ(d.created_date, '+00:00', '-08:00')) = '{date}'\n  AND d.filled_at = 11\nGROUP BY pd.id"
   },
   "api": {
-    "getpackdetails_base_url": "https://qa-app-ws.dosepack.com",
+    "getpackdetails_base_url": "https://s-ws.dosepack.com",
     "perform_vision_system_analysis_url": "http://172.29.0.68:13000/api/perform_vision_system_analysis"
   },
   "request_id": 54,
   "msg_id": 124,
   "test_pack": {
-    "device_id": 3,
+    "device_ids": [2, 3],
     "system_id": 414,
-    "company_id": 5
+    "company_id": 4
   }
 }

@@ -145,7 +145,7 @@ For a single date:
 WHERE DATE(created_date) = '{date}'
 ```
 
-For a date range:
+For a date range:da
 
 ```sql
 WHERE DATE(created_date) BETWEEN '{date_start}' AND '{date_end}'
@@ -189,7 +189,7 @@ python pvs_automation.py --date 2026-05-20
 ## Payload Structure
 
 One POST per `drop_number`. Each payload contains 4 quadrant entries (`"1"` through `"4"`) with drug data grouped by their `quadrant` field (not `current_quadrant`).
-
+    
 ```json
 {
   "data": {
