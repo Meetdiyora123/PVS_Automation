@@ -462,7 +462,7 @@ def post_to_pvs(http, payload, api_url):
     return result
 
 
-def process_pack(http, pack_row, config, filter_drops=None, save_dir=None):
+def process_pack(http, pack_row, config, filter_drops=None, filter_slot=None, save_dir=None):
     pack_id = pack_row["pack_id"]
     device_id = pack_row["device_id"]
     system_id = pack_row["system_id"]
@@ -488,6 +488,13 @@ def process_pack(http, pack_row, config, filter_drops=None, save_dir=None):
         return False
 
     payloads = build_all_drop_payloads(getpack_data, system_id, request_id=request_id, msg_id=msg_id)
+
+    if filter_slot:
+        payloads = [
+            (dn, p)
+            for dn, p in payloads
+            if payload_contains_slot(p, filter_slot)
+        ]
 
     if filter_drops:
         payloads = [(dn, p) for dn, p in payloads if dn in filter_drops]
@@ -549,11 +556,27 @@ def process_pack(http, pack_row, config, filter_drops=None, save_dir=None):
 
     return all_ok
 
+def payload_contains_slot(payload, slot_number):
+    slot_number = str(slot_number)
+
+    for q in ("1", "2", "3", "4"):
+        qdata = payload.get("data", {}).get(q, {})
+
+        if str(qdata.get("slot_number")) == slot_number:
+            return True
+
+    return False
+
 
 def main():
     import argparse
 
     parser = argparse.ArgumentParser(description="PVS Automation")
+    parser.add_argument(
+        "--slot-number",
+        type=str,
+        help="Only print payloads containing this slot number"
+    )
     parser.add_argument("--test-pack", type=int, help="Test mode: process a single pack_id (device/system/company from config.json test_pack)")
     parser.add_argument("--no-post", action="store_true", help="Print payloads without POSTing")
     parser.add_argument("--save-payloads", "-s", metavar="DIR", help="Save payload JSON files to the given directory")
@@ -645,11 +668,30 @@ def main():
                 logger.error(f"FAILED getpackdetails: {e}")
                 sys.exit(1)
             payloads = build_all_drop_payloads(getpack_data, pack_row["system_id"])
-            print(json.dumps([{"drop_number": dn, "payload": p} for dn, p in payloads], indent=2))
+
+            if args.slot_number:
+                payloads = [
+                    (dn, p)
+                    for dn, p in payloads
+                    if payload_contains_slot(p, args.slot_number)
+                ]
+
+            print(
+                json.dumps(
+                    [{"drop_number": dn, "payload": p} for dn, p in payloads],
+                    indent=2
+                )
+            )
             if args.save_payloads:
                 save_payloads(payloads, args.save_payloads, pack_row["pack_id"])
         else:
-            process_pack(http, pack_row, config, save_dir=args.save_payloads)
+            process_pack(
+                http,
+                pack_row,
+                config,
+                filter_slot=args.slot_number,
+                save_dir=args.save_payloads
+            )
         return
 
     # ── Full run ──

@@ -157,12 +157,13 @@ WHERE DATE(created_date) BETWEEN '{date_start}' AND '{date_end}'
 python pvs_automation.py [options]
 ```
 
-| Argument                      | Description                                         |
-|-------------------------------|-----------------------------------------------------|
-| `--test-pack <id>`            | Process a single pack (uses `test_pack` in config)  |
-| `--no-post`                   | Print generated payloads to stdout, skip POST       |
-| `-s, --save-payloads <dir>`   | Save payload JSON files to the given directory      |
-| `--date <value>`              | Override query date (see Date Configuration above)  |
+| Argument                      | Description                                        |
+|-------------------------------|----------------------------------------------------|
+| `--test-pack <id>`            | Process a single pack (uses `test_pack` in config) |
+| `--no-post`                   | Print generated payloads to stdout, skip POST      |
+| `-s, --save-payloads <dir>`   | Save payload JSON files to the given directory     |
+| `--date <value>`              | Override query date (see Date Configuration above) |
+| `--slot-number <slot_number>  | Process a single slot                              |
 
 ### Examples
 

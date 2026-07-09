@@ -1,0 +1,137 @@
+2026-07-09 14:19:06,499 [INFO] Cached token expired
+2026-07-09 14:19:06,515 [INFO] Logging in to https://s-auth.dosepack.com/api/login
+2026-07-09 14:19:06,862 [INFO] Auth token obtained
+2026-07-09 14:19:06,862 [INFO] Token cached
+2026-07-09 14:19:06,878 [INFO] Trying pack 166119 with device_id=2, system_id=414, company_id=4
+2026-07-09 14:19:06,878 [INFO]   Fetching details for pack 166119
+2026-07-09 14:19:11,393 [INFO] Pack 166119 valid using device_id=2 (14 payloads generated)
+2026-07-09 14:19:11,393 [INFO]   Fetching details for pack 166119
+2026-07-09 14:19:57,229 [INFO] Using cached token
+2026-07-09 14:19:57,245 [INFO] Trying pack 166119 with device_id=2, system_id=414, company_id=4
+2026-07-09 14:19:57,245 [INFO]   Fetching details for pack 166119
+2026-07-09 14:20:02,642 [INFO] Pack 166119 valid using device_id=2 (14 payloads generated)
+2026-07-09 14:20:02,658 [INFO]   Fetching details for pack 166119
+2026-07-09 14:20:09,209 [INFO]   Saved: payloads_output\pack166119_drop1.txt
+2026-07-09 14:20:09,219 [INFO]   Saved: payloads_output\pack166119_drop2.txt
+2026-07-09 14:20:09,234 [INFO]   Saved: payloads_output\pack166119_drop3.txt
+2026-07-09 14:20:09,265 [INFO]   Saved: payloads_output\pack166119_drop4.txt
+2026-07-09 14:20:09,265 [INFO]   Saved: payloads_output\pack166119_drop5.txt
+2026-07-09 14:20:09,281 [INFO]   Saved: payloads_output\pack166119_drop6.txt
+2026-07-09 14:20:09,297 [INFO]   Saved: payloads_output\pack166119_drop7.txt
+2026-07-09 14:20:09,313 [INFO]   Saved: payloads_output\pack166119_drop8.txt
+2026-07-09 14:20:09,329 [INFO]   Saved: payloads_output\pack166119_drop9.txt
+2026-07-09 14:20:09,329 [INFO]   Saved: payloads_output\pack166119_drop10.txt
+2026-07-09 14:20:09,360 [INFO]   Saved: payloads_output\pack166119_drop11.txt
+2026-07-09 14:20:09,360 [INFO]   Saved: payloads_output\pack166119_drop12.txt
+2026-07-09 14:20:09,375 [INFO]   Saved: payloads_output\pack166119_drop13.txt
+2026-07-09 14:20:09,391 [INFO]   Saved: payloads_output\pack166119_drop14.txt
+2026-07-09 14:26:07,550 [INFO] Using cached token
+2026-07-09 14:26:07,564 [INFO] Trying pack 166119 with device_id=2, system_id=414, company_id=4
+2026-07-09 14:26:07,570 [INFO]   Fetching details for pack 166119
+2026-07-09 14:26:11,856 [INFO] Pack 166119 valid using device_id=2 (14 payloads generated)
+2026-07-09 14:26:11,870 [INFO]   Fetching details for pack 166119
+2026-07-09 14:43:19,484 [INFO] Using cached token
+2026-07-09 14:43:19,484 [INFO] Trying pack 166119 with device_id=2, system_id=414, company_id=4
+2026-07-09 14:43:19,484 [INFO]   Fetching details for pack 166119
+2026-07-09 14:44:22,809 [INFO] Using cached token
+2026-07-09 14:44:22,809 [INFO] Trying pack 166119 with device_id=2, system_id=414, company_id=4
+2026-07-09 14:44:22,809 [INFO]   Fetching details for pack 166119
+2026-07-09 14:44:52,876 [WARNING] device_id=2 failed: HTTPSConnectionPool(host='s-ws.dosepack.com', port=443): Read timed out. (read timeout=30)
+2026-07-09 14:44:52,876 [INFO] Trying pack 166119 with device_id=3, system_id=414, company_id=4
+2026-07-09 14:44:52,876 [INFO]   Fetching details for pack 166119
+2026-07-09 14:45:18,123 [WARNING] device_id=3 generated 0 payloads, trying next device
+2026-07-09 14:45:18,123 [ERROR] Could not find pack 166119 using any configured device_id
+2026-07-09 15:04:18,289 [INFO] Using cached token
+2026-07-09 15:04:18,289 [INFO] Trying pack 166119 with device_id=2, system_id=414, company_id=4
+2026-07-09 15:04:18,289 [INFO]   Fetching details for pack 166119
+2026-07-09 15:04:39,598 [WARNING] device_id=2 failed: HTTPSConnectionPool(host='s-ws.dosepack.com', port=443): Max retries exceeded with url: /v2/api/getpackdetails?device_id=2&non_fractional=1&exclude_pack_ids=%5B%5D&system_id=414&mft_slots=1&company_id=4&pack_id=166119 (Caused by ConnectTimeoutError(<HTTPSConnection(host='s-ws.dosepack.com', port=443) at 0x23940e23fd0>, 'Connection to s-ws.dosepack.com timed out. (connect timeout=30)'))
+2026-07-09 15:04:39,599 [INFO] Trying pack 166119 with device_id=3, system_id=414, company_id=4
+2026-07-09 15:04:39,599 [INFO]   Fetching details for pack 166119
+2026-07-09 15:05:00,654 [WARNING] device_id=3 failed: HTTPSConnectionPool(host='s-ws.dosepack.com', port=443): Max retries exceeded with url: /v2/api/getpackdetails?device_id=3&non_fractional=1&exclude_pack_ids=%5B%5D&system_id=414&mft_slots=1&company_id=4&pack_id=166119 (Caused by ConnectTimeoutError(<HTTPSConnection(host='s-ws.dosepack.com', port=443) at 0x23940e2df90>, 'Connection to s-ws.dosepack.com timed out. (connect timeout=30)'))
+2026-07-09 15:05:00,670 [ERROR] Could not find pack 166119 using any configured device_id
+2026-07-09 15:07:08,769 [INFO] Using cached token
+2026-07-09 15:07:08,769 [INFO] Trying pack 166119 with device_id=2, system_id=414, company_id=4
+2026-07-09 15:07:08,769 [INFO]   Fetching details for pack 166119
+2026-07-09 15:07:12,625 [INFO] Pack 166119 valid using device_id=2 (14 payloads generated)
+2026-07-09 15:07:12,625 [INFO]   Fetching details for pack 166119
+2026-07-09 15:07:42,611 [INFO] Using cached token
+2026-07-09 15:07:42,611 [INFO] Trying pack 166119 with device_id=2, system_id=414, company_id=4
+2026-07-09 15:07:42,611 [INFO]   Fetching details for pack 166119
+2026-07-09 15:07:44,809 [INFO] Pack 166119 valid using device_id=2 (14 payloads generated)
+2026-07-09 15:07:44,810 [INFO]   Fetching details for pack 166119
+2026-07-09 15:10:36,971 [INFO] Using cached token
+2026-07-09 15:10:36,971 [INFO] Trying pack 166119 with device_id=2, system_id=414, company_id=4
+2026-07-09 15:10:36,971 [INFO]   Fetching details for pack 166119
+2026-07-09 15:10:38,907 [INFO] Pack 166119 valid using device_id=2 (14 payloads generated)
+2026-07-09 15:10:38,907 [INFO]   Fetching details for pack 166119
+2026-07-09 15:10:40,410 [INFO]   Saved: payloads_output\pack166119_drop1.txt
+2026-07-09 15:18:50,148 [INFO] Using cached token
+2026-07-09 15:18:50,148 [INFO] Trying pack 166142 with device_id=2, system_id=414, company_id=4
+2026-07-09 15:18:50,148 [INFO]   Fetching details for pack 166142
+2026-07-09 15:18:52,003 [INFO] Pack 166142 valid using device_id=2 (14 payloads generated)
+2026-07-09 15:18:52,003 [INFO]   Fetching details for pack 166142
+2026-07-09 15:18:52,962 [INFO]   Saved: payloads_output\pack166142_drop2.txt
+2026-07-09 15:38:38,799 [INFO] Using cached token
+2026-07-09 15:38:38,799 [INFO] Trying pack 163171 with device_id=2, system_id=414, company_id=4
+2026-07-09 15:38:38,800 [INFO]   Fetching details for pack 163171
+2026-07-09 15:38:39,979 [WARNING] device_id=2 generated 0 payloads, trying next device
+2026-07-09 15:38:39,980 [INFO] Trying pack 163171 with device_id=3, system_id=414, company_id=4
+2026-07-09 15:38:39,980 [INFO]   Fetching details for pack 163171
+2026-07-09 15:38:41,798 [INFO] Pack 163171 valid using device_id=3 (21 payloads generated)
+2026-07-09 15:38:41,798 [INFO]   Fetching details for pack 163171
+2026-07-09 15:38:42,888 [INFO]   Saved: payloads_output\pack163171_drop21.txt
+2026-07-09 15:44:15,409 [INFO] Using cached token
+2026-07-09 15:44:15,409 [INFO] Trying pack 166000 with device_id=2, system_id=414, company_id=4
+2026-07-09 15:44:15,409 [INFO]   Fetching details for pack 166000
+2026-07-09 15:44:16,644 [WARNING] device_id=2 generated 0 payloads, trying next device
+2026-07-09 15:44:16,644 [INFO] Trying pack 166000 with device_id=3, system_id=414, company_id=4
+2026-07-09 15:44:16,645 [INFO]   Fetching details for pack 166000
+2026-07-09 15:44:18,329 [INFO] Pack 166000 valid using device_id=3 (28 payloads generated)
+2026-07-09 15:44:18,329 [INFO]   Fetching details for pack 166000
+2026-07-09 15:44:20,438 [INFO]   Saved: payloads_output\pack166000_drop21.txt
+2026-07-09 15:44:25,129 [INFO] Using cached token
+2026-07-09 15:44:25,129 [INFO] Trying pack 166000 with device_id=2, system_id=414, company_id=4
+2026-07-09 15:44:25,129 [INFO]   Fetching details for pack 166000
+2026-07-09 15:44:26,302 [WARNING] device_id=2 generated 0 payloads, trying next device
+2026-07-09 15:44:26,302 [INFO] Trying pack 166000 with device_id=3, system_id=414, company_id=4
+2026-07-09 15:44:26,302 [INFO]   Fetching details for pack 166000
+2026-07-09 15:44:28,143 [INFO] Pack 166000 valid using device_id=3 (28 payloads generated)
+2026-07-09 15:44:28,143 [INFO]   Fetching details for pack 166000
+2026-07-09 15:44:30,368 [INFO]   Saved: payloads_output\pack166000_drop17.txt
+2026-07-09 16:20:09,456 [INFO] Using cached token
+2026-07-09 16:20:09,456 [INFO] Trying pack 166000 with device_id=2, system_id=414, company_id=4
+2026-07-09 16:20:09,456 [INFO]   Fetching details for pack 166000
+2026-07-09 16:20:11,205 [WARNING] device_id=2 generated 0 payloads, trying next device
+2026-07-09 16:20:11,205 [INFO] Trying pack 166000 with device_id=3, system_id=414, company_id=4
+2026-07-09 16:20:11,206 [INFO]   Fetching details for pack 166000
+2026-07-09 16:20:14,018 [INFO] Pack 166000 valid using device_id=3 (28 payloads generated)
+2026-07-09 16:20:14,018 [INFO] --- Processing pack 166000 (device=3, system=414) ---
+2026-07-09 16:20:14,018 [INFO]   Fetching details for pack 166000
+2026-07-09 16:20:16,408 [INFO]   Generated 1 drop payload(s)
+2026-07-09 16:20:16,408 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-09 16:20:16,471 [INFO]   Init HTTP status: 200
+2026-07-09 16:20:16,471 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-09 16:20:16,471 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-09 16:20:18,477 [INFO] Drop=17 Q=1 Slot=22 Device=3 System=414 DrugCount=3
+2026-07-09 16:20:18,477 [INFO] Drop=17 Q=2 Slot=22 Device=3 System=414 DrugCount=1
+2026-07-09 16:20:18,479 [INFO] Drop=17 Q=3 Slot=None Device=None System=414 DrugCount=0
+2026-07-09 16:20:18,479 [INFO] Drop=17 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-09 16:20:18,479 [INFO]   POSTing drop 17 (slots: 22, 22)...
+2026-07-09 16:20:18,479 [INFO] ================================================================================
+2026-07-09 16:20:18,479 [INFO] PVS REQUEST: drop=17, station_type=21, station_id=21000
+2026-07-09 16:20:18,479 [INFO] Quadrant 1: slot=22 device=3 system=414 drug_count=3
+2026-07-09 16:20:18,479 [INFO] Quadrant 2: slot=22 device=3 system=414 drug_count=1
+2026-07-09 16:20:18,479 [INFO] Quadrant 3: slot=None device=None system=414 drug_count=0
+2026-07-09 16:20:18,479 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-09 16:20:18,515 [INFO] PVS HTTP Status: 200
+2026-07-09 16:20:20,517 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-09 16:20:20,517 [INFO] ================================================================================
+2026-07-09 16:20:20,517 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}

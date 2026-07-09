@@ -21941,3 +21941,849 @@
 }
 2026-07-03 13:54:53,148 [INFO] ================================================================================
 2026-07-03 13:54:53,152 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:39:44,464 [INFO] Using cached token
+2026-07-03 19:39:44,465 [INFO] Trying pack 164285 with device_id=2, system_id=414, company_id=4
+2026-07-03 19:39:44,465 [INFO]   Fetching details for pack 164285
+2026-07-03 19:39:45,455 [WARNING] device_id=2 generated 0 payloads, trying next device
+2026-07-03 19:39:45,455 [INFO] Trying pack 164285 with device_id=3, system_id=414, company_id=4
+2026-07-03 19:39:45,455 [INFO]   Fetching details for pack 164285
+2026-07-03 19:39:47,092 [INFO] Pack 164285 valid using device_id=3 (21 payloads generated)
+2026-07-03 19:39:47,117 [INFO] --- Processing pack 164285 (device=3, system=414) ---
+2026-07-03 19:39:47,144 [INFO]   Fetching details for pack 164285
+2026-07-03 19:39:48,122 [INFO]   Generated 21 drop payload(s)
+2026-07-03 19:39:48,180 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:39:48,219 [INFO]   Init HTTP status: 200
+2026-07-03 19:39:48,263 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:39:48,264 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:39:50,265 [INFO] Drop=1 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:39:50,265 [INFO] Drop=1 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:39:50,265 [INFO] Drop=1 Q=3 Slot=26 Device=3 System=414 DrugCount=1
+2026-07-03 19:39:50,265 [INFO] Drop=1 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:39:50,265 [INFO]   POSTing drop 1 (slots: 26)...
+2026-07-03 19:39:50,265 [INFO] ================================================================================
+2026-07-03 19:39:50,265 [INFO] PVS REQUEST: drop=1, station_type=21, station_id=21000
+2026-07-03 19:39:50,265 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:39:50,265 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:39:50,268 [INFO] Quadrant 3: slot=26 device=3 system=414 drug_count=1
+2026-07-03 19:39:50,268 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:39:50,297 [INFO] PVS HTTP Status: 200
+2026-07-03 19:39:52,297 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:39:52,298 [INFO] ================================================================================
+2026-07-03 19:39:52,298 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:39:52,298 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:39:53,111 [INFO]   Init HTTP status: 200
+2026-07-03 19:39:53,111 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:39:53,111 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:39:55,120 [INFO] Drop=2 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:39:55,120 [INFO] Drop=2 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:39:55,120 [INFO] Drop=2 Q=3 Slot=22 Device=3 System=414 DrugCount=1
+2026-07-03 19:39:55,120 [INFO] Drop=2 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:39:55,120 [INFO]   POSTing drop 2 (slots: 22)...
+2026-07-03 19:39:55,120 [INFO] ================================================================================
+2026-07-03 19:39:55,120 [INFO] PVS REQUEST: drop=2, station_type=21, station_id=21000
+2026-07-03 19:39:55,120 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:39:55,120 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:39:55,120 [INFO] Quadrant 3: slot=22 device=3 system=414 drug_count=1
+2026-07-03 19:39:55,120 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:39:55,143 [INFO] PVS HTTP Status: 200
+2026-07-03 19:39:57,154 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:39:57,154 [INFO] ================================================================================
+2026-07-03 19:39:57,155 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:39:57,156 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:39:57,252 [INFO]   Init HTTP status: 200
+2026-07-03 19:39:57,252 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:39:57,252 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:39:59,258 [INFO] Drop=3 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:39:59,258 [INFO] Drop=3 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:39:59,258 [INFO] Drop=3 Q=3 Slot=18 Device=3 System=414 DrugCount=1
+2026-07-03 19:39:59,258 [INFO] Drop=3 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:39:59,262 [INFO]   POSTing drop 3 (slots: 18)...
+2026-07-03 19:39:59,262 [INFO] ================================================================================
+2026-07-03 19:39:59,262 [INFO] PVS REQUEST: drop=3, station_type=21, station_id=21000
+2026-07-03 19:39:59,262 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:39:59,262 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:39:59,262 [INFO] Quadrant 3: slot=18 device=3 system=414 drug_count=1
+2026-07-03 19:39:59,262 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:39:59,288 [INFO] PVS HTTP Status: 200
+2026-07-03 19:40:01,290 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:40:01,290 [INFO] ================================================================================
+2026-07-03 19:40:01,290 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:40:01,290 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:40:01,998 [INFO]   Init HTTP status: 200
+2026-07-03 19:40:01,998 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:40:02,000 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:40:04,001 [INFO] Drop=4 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:40:04,003 [INFO] Drop=4 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:40:04,004 [INFO] Drop=4 Q=3 Slot=14 Device=3 System=414 DrugCount=1
+2026-07-03 19:40:04,005 [INFO] Drop=4 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:40:04,007 [INFO]   POSTing drop 4 (slots: 14)...
+2026-07-03 19:40:04,007 [INFO] ================================================================================
+2026-07-03 19:40:04,008 [INFO] PVS REQUEST: drop=4, station_type=21, station_id=21000
+2026-07-03 19:40:04,009 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:40:04,010 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:40:04,010 [INFO] Quadrant 3: slot=14 device=3 system=414 drug_count=1
+2026-07-03 19:40:04,011 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:40:04,039 [INFO] PVS HTTP Status: 200
+2026-07-03 19:40:06,041 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:40:06,041 [INFO] ================================================================================
+2026-07-03 19:40:06,041 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:40:06,041 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:40:06,431 [INFO]   Init HTTP status: 200
+2026-07-03 19:40:06,431 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:40:06,431 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:40:44,793 [INFO] Using cached token
+2026-07-03 19:40:44,793 [INFO] Trying pack 164285 with device_id=2, system_id=414, company_id=4
+2026-07-03 19:40:44,793 [INFO]   Fetching details for pack 164285
+2026-07-03 19:40:46,052 [WARNING] device_id=2 generated 0 payloads, trying next device
+2026-07-03 19:40:46,052 [INFO] Trying pack 164285 with device_id=3, system_id=414, company_id=4
+2026-07-03 19:40:46,052 [INFO]   Fetching details for pack 164285
+2026-07-03 19:40:47,850 [INFO] Pack 164285 valid using device_id=3 (21 payloads generated)
+2026-07-03 19:40:47,850 [INFO] --- Processing pack 164285 (device=3, system=414) ---
+2026-07-03 19:40:47,850 [INFO]   Fetching details for pack 164285
+2026-07-03 19:40:48,648 [INFO]   Generated 21 drop payload(s)
+2026-07-03 19:40:48,648 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:40:48,675 [INFO]   Init HTTP status: 200
+2026-07-03 19:40:48,675 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:40:48,675 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:40:50,677 [INFO] Drop=1 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:40:50,677 [INFO] Drop=1 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:40:50,677 [INFO] Drop=1 Q=3 Slot=26 Device=3 System=414 DrugCount=1
+2026-07-03 19:40:50,677 [INFO] Drop=1 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:40:50,677 [INFO]   POSTing drop 1 (slots: 26)...
+2026-07-03 19:40:50,677 [INFO] ================================================================================
+2026-07-03 19:40:50,677 [INFO] PVS REQUEST: drop=1, station_type=21, station_id=21000
+2026-07-03 19:40:50,677 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:40:50,677 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:40:50,677 [INFO] Quadrant 3: slot=26 device=3 system=414 drug_count=1
+2026-07-03 19:40:50,677 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:40:50,693 [INFO] PVS HTTP Status: 200
+2026-07-03 19:40:52,701 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:40:52,701 [INFO] ================================================================================
+2026-07-03 19:40:52,701 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:40:52,701 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:40:53,350 [INFO]   Init HTTP status: 200
+2026-07-03 19:40:53,350 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:40:53,352 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:40:55,354 [INFO] Drop=2 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:40:55,355 [INFO] Drop=2 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:40:55,356 [INFO] Drop=2 Q=3 Slot=22 Device=3 System=414 DrugCount=1
+2026-07-03 19:40:55,357 [INFO] Drop=2 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:40:55,358 [INFO]   POSTing drop 2 (slots: 22)...
+2026-07-03 19:40:55,359 [INFO] ================================================================================
+2026-07-03 19:40:55,361 [INFO] PVS REQUEST: drop=2, station_type=21, station_id=21000
+2026-07-03 19:40:55,361 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:40:55,362 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:40:55,363 [INFO] Quadrant 3: slot=22 device=3 system=414 drug_count=1
+2026-07-03 19:40:55,363 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:40:55,401 [INFO] PVS HTTP Status: 200
+2026-07-03 19:40:57,407 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:40:57,407 [INFO] ================================================================================
+2026-07-03 19:40:57,408 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:40:57,409 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:40:58,083 [INFO]   Init HTTP status: 200
+2026-07-03 19:40:58,083 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:40:58,083 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:00,087 [INFO] Drop=3 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:00,087 [INFO] Drop=3 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:00,087 [INFO] Drop=3 Q=3 Slot=18 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:00,087 [INFO] Drop=3 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:00,087 [INFO]   POSTing drop 3 (slots: 18)...
+2026-07-03 19:41:00,087 [INFO] ================================================================================
+2026-07-03 19:41:00,087 [INFO] PVS REQUEST: drop=3, station_type=21, station_id=21000
+2026-07-03 19:41:00,087 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:00,087 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:00,087 [INFO] Quadrant 3: slot=18 device=3 system=414 drug_count=1
+2026-07-03 19:41:00,087 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:00,115 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:02,126 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:02,128 [INFO] ================================================================================
+2026-07-03 19:41:02,129 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:02,130 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:02,818 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:02,818 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:02,818 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:04,829 [INFO] Drop=4 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:04,829 [INFO] Drop=4 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:04,829 [INFO] Drop=4 Q=3 Slot=14 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:04,829 [INFO] Drop=4 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:04,829 [INFO]   POSTing drop 4 (slots: 14)...
+2026-07-03 19:41:04,829 [INFO] ================================================================================
+2026-07-03 19:41:04,829 [INFO] PVS REQUEST: drop=4, station_type=21, station_id=21000
+2026-07-03 19:41:04,829 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:04,829 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:04,829 [INFO] Quadrant 3: slot=14 device=3 system=414 drug_count=1
+2026-07-03 19:41:04,829 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:04,857 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:06,858 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:06,858 [INFO] ================================================================================
+2026-07-03 19:41:06,858 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:06,858 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:07,506 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:07,506 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:07,521 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:09,524 [INFO] Drop=5 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:09,525 [INFO] Drop=5 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:09,526 [INFO] Drop=5 Q=3 Slot=10 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:09,527 [INFO] Drop=5 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:09,528 [INFO]   POSTing drop 5 (slots: 10)...
+2026-07-03 19:41:09,529 [INFO] ================================================================================
+2026-07-03 19:41:09,529 [INFO] PVS REQUEST: drop=5, station_type=21, station_id=21000
+2026-07-03 19:41:09,530 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:09,531 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:09,532 [INFO] Quadrant 3: slot=10 device=3 system=414 drug_count=1
+2026-07-03 19:41:09,533 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:09,563 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:11,565 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:11,565 [INFO] ================================================================================
+2026-07-03 19:41:11,565 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:11,569 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:12,318 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:12,318 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:12,318 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:14,325 [INFO] Drop=6 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:14,325 [INFO] Drop=6 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:14,325 [INFO] Drop=6 Q=3 Slot=6 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:14,325 [INFO] Drop=6 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:14,325 [INFO]   POSTing drop 6 (slots: 6)...
+2026-07-03 19:41:14,325 [INFO] ================================================================================
+2026-07-03 19:41:14,325 [INFO] PVS REQUEST: drop=6, station_type=21, station_id=21000
+2026-07-03 19:41:14,325 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:14,325 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:14,325 [INFO] Quadrant 3: slot=6 device=3 system=414 drug_count=1
+2026-07-03 19:41:14,325 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:14,350 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:16,365 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:16,365 [INFO] ================================================================================
+2026-07-03 19:41:16,365 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:16,365 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:17,087 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:17,088 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:17,088 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:19,089 [INFO] Drop=7 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:19,090 [INFO] Drop=7 Q=2 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:19,090 [INFO] Drop=7 Q=3 Slot=2 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:19,091 [INFO] Drop=7 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:19,092 [INFO]   POSTing drop 7 (slots: 2)...
+2026-07-03 19:41:19,093 [INFO] ================================================================================
+2026-07-03 19:41:19,093 [INFO] PVS REQUEST: drop=7, station_type=21, station_id=21000
+2026-07-03 19:41:19,094 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:19,095 [INFO] Quadrant 2: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:19,095 [INFO] Quadrant 3: slot=2 device=3 system=414 drug_count=1
+2026-07-03 19:41:19,096 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:19,118 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:21,119 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:21,119 [INFO] ================================================================================
+2026-07-03 19:41:21,119 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:21,119 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:21,487 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:21,493 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:21,498 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:23,499 [INFO] Drop=8 Q=1 Slot=25 Device=3 System=414 DrugCount=3
+2026-07-03 19:41:23,499 [INFO] Drop=8 Q=2 Slot=25 Device=111 System=414 DrugCount=2
+2026-07-03 19:41:23,499 [INFO] Drop=8 Q=3 Slot=25 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:23,500 [INFO] Drop=8 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:23,500 [INFO]   POSTing drop 8 (slots: 25, 25, 25)...
+2026-07-03 19:41:23,500 [INFO] ================================================================================
+2026-07-03 19:41:23,500 [INFO] PVS REQUEST: drop=8, station_type=21, station_id=21000
+2026-07-03 19:41:23,500 [INFO] Quadrant 1: slot=25 device=3 system=414 drug_count=3
+2026-07-03 19:41:23,501 [INFO] Quadrant 2: slot=25 device=111 system=414 drug_count=2
+2026-07-03 19:41:23,501 [INFO] Quadrant 3: slot=25 device=3 system=414 drug_count=1
+2026-07-03 19:41:23,501 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:23,536 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:25,537 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:25,540 [INFO] ================================================================================
+2026-07-03 19:41:25,542 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:25,543 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:26,212 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:26,212 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:26,212 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:28,214 [INFO] Drop=9 Q=1 Slot=4 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:28,214 [INFO] Drop=9 Q=2 Slot=27 Device=111 System=414 DrugCount=2
+2026-07-03 19:41:28,215 [INFO] Drop=9 Q=3 Slot=4 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:28,215 [INFO] Drop=9 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:28,215 [INFO]   POSTing drop 9 (slots: 4, 27, 4)...
+2026-07-03 19:41:28,216 [INFO] ================================================================================
+2026-07-03 19:41:28,216 [INFO] PVS REQUEST: drop=9, station_type=21, station_id=21000
+2026-07-03 19:41:28,216 [INFO] Quadrant 1: slot=4 device=3 system=414 drug_count=1
+2026-07-03 19:41:28,217 [INFO] Quadrant 2: slot=27 device=111 system=414 drug_count=2
+2026-07-03 19:41:28,217 [INFO] Quadrant 3: slot=4 device=3 system=414 drug_count=1
+2026-07-03 19:41:28,217 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:28,245 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:30,248 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:30,256 [INFO] ================================================================================
+2026-07-03 19:41:30,258 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:30,260 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:30,931 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:30,932 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:30,932 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:32,933 [INFO] Drop=10 Q=1 Slot=28 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:32,933 [INFO] Drop=10 Q=2 Slot=3 Device=111 System=414 DrugCount=2
+2026-07-03 19:41:32,933 [INFO] Drop=10 Q=3 Slot=28 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:32,933 [INFO] Drop=10 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:32,933 [INFO]   POSTing drop 10 (slots: 28, 3, 28)...
+2026-07-03 19:41:32,933 [INFO] ================================================================================
+2026-07-03 19:41:32,933 [INFO] PVS REQUEST: drop=10, station_type=21, station_id=21000
+2026-07-03 19:41:32,933 [INFO] Quadrant 1: slot=28 device=3 system=414 drug_count=1
+2026-07-03 19:41:32,933 [INFO] Quadrant 2: slot=3 device=111 system=414 drug_count=2
+2026-07-03 19:41:32,933 [INFO] Quadrant 3: slot=28 device=3 system=414 drug_count=1
+2026-07-03 19:41:32,933 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:32,999 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:35,000 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:35,000 [INFO] ================================================================================
+2026-07-03 19:41:35,000 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:35,000 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:35,727 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:35,727 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:35,742 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:37,745 [INFO] Drop=11 Q=1 Slot=21 Device=3 System=414 DrugCount=4
+2026-07-03 19:41:37,745 [INFO] Drop=11 Q=2 Slot=21 Device=111 System=414 DrugCount=2
+2026-07-03 19:41:37,745 [INFO] Drop=11 Q=3 Slot=21 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:37,745 [INFO] Drop=11 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:37,745 [INFO]   POSTing drop 11 (slots: 21, 21, 21)...
+2026-07-03 19:41:37,745 [INFO] ================================================================================
+2026-07-03 19:41:37,745 [INFO] PVS REQUEST: drop=11, station_type=21, station_id=21000
+2026-07-03 19:41:37,745 [INFO] Quadrant 1: slot=21 device=3 system=414 drug_count=4
+2026-07-03 19:41:37,745 [INFO] Quadrant 2: slot=21 device=111 system=414 drug_count=2
+2026-07-03 19:41:37,745 [INFO] Quadrant 3: slot=21 device=3 system=414 drug_count=1
+2026-07-03 19:41:37,745 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:37,774 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:39,779 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:39,780 [INFO] ================================================================================
+2026-07-03 19:41:39,780 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:39,781 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:40,460 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:40,460 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:40,461 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:42,461 [INFO] Drop=12 Q=1 Slot=8 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:42,461 [INFO] Drop=12 Q=2 Slot=23 Device=111 System=414 DrugCount=2
+2026-07-03 19:41:42,461 [INFO] Drop=12 Q=3 Slot=8 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:42,461 [INFO] Drop=12 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:42,461 [INFO]   POSTing drop 12 (slots: 8, 23, 8)...
+2026-07-03 19:41:42,461 [INFO] ================================================================================
+2026-07-03 19:41:42,461 [INFO] PVS REQUEST: drop=12, station_type=21, station_id=21000
+2026-07-03 19:41:42,461 [INFO] Quadrant 1: slot=8 device=3 system=414 drug_count=1
+2026-07-03 19:41:42,461 [INFO] Quadrant 2: slot=23 device=111 system=414 drug_count=2
+2026-07-03 19:41:42,461 [INFO] Quadrant 3: slot=8 device=3 system=414 drug_count=1
+2026-07-03 19:41:42,461 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:42,477 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:44,488 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:44,488 [INFO] ================================================================================
+2026-07-03 19:41:44,488 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:44,488 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:45,134 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:45,134 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:45,134 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:47,147 [INFO] Drop=13 Q=1 Slot=24 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:47,148 [INFO] Drop=13 Q=2 Slot=7 Device=111 System=414 DrugCount=2
+2026-07-03 19:41:47,148 [INFO] Drop=13 Q=3 Slot=24 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:47,148 [INFO] Drop=13 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:47,148 [INFO]   POSTing drop 13 (slots: 24, 7, 24)...
+2026-07-03 19:41:47,148 [INFO] ================================================================================
+2026-07-03 19:41:47,148 [INFO] PVS REQUEST: drop=13, station_type=21, station_id=21000
+2026-07-03 19:41:47,148 [INFO] Quadrant 1: slot=24 device=3 system=414 drug_count=1
+2026-07-03 19:41:47,148 [INFO] Quadrant 2: slot=7 device=111 system=414 drug_count=2
+2026-07-03 19:41:47,148 [INFO] Quadrant 3: slot=24 device=3 system=414 drug_count=1
+2026-07-03 19:41:47,148 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:47,179 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:49,191 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:49,191 [INFO] ================================================================================
+2026-07-03 19:41:49,191 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:49,191 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:49,867 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:49,867 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:49,867 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:51,877 [INFO] Drop=14 Q=1 Slot=17 Device=3 System=414 DrugCount=4
+2026-07-03 19:41:51,877 [INFO] Drop=14 Q=2 Slot=17 Device=111 System=414 DrugCount=2
+2026-07-03 19:41:51,878 [INFO] Drop=14 Q=3 Slot=17 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:51,878 [INFO] Drop=14 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:51,878 [INFO]   POSTing drop 14 (slots: 17, 17, 17)...
+2026-07-03 19:41:51,878 [INFO] ================================================================================
+2026-07-03 19:41:51,878 [INFO] PVS REQUEST: drop=14, station_type=21, station_id=21000
+2026-07-03 19:41:51,879 [INFO] Quadrant 1: slot=17 device=3 system=414 drug_count=4
+2026-07-03 19:41:51,879 [INFO] Quadrant 2: slot=17 device=111 system=414 drug_count=2
+2026-07-03 19:41:51,879 [INFO] Quadrant 3: slot=17 device=3 system=414 drug_count=1
+2026-07-03 19:41:51,880 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:51,914 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:53,918 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:53,918 [INFO] ================================================================================
+2026-07-03 19:41:53,932 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:53,932 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:54,586 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:54,586 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:54,586 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:41:56,589 [INFO] Drop=15 Q=1 Slot=12 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:56,589 [INFO] Drop=15 Q=2 Slot=19 Device=111 System=414 DrugCount=2
+2026-07-03 19:41:56,589 [INFO] Drop=15 Q=3 Slot=12 Device=3 System=414 DrugCount=1
+2026-07-03 19:41:56,589 [INFO] Drop=15 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:41:56,589 [INFO]   POSTing drop 15 (slots: 12, 19, 12)...
+2026-07-03 19:41:56,589 [INFO] ================================================================================
+2026-07-03 19:41:56,589 [INFO] PVS REQUEST: drop=15, station_type=21, station_id=21000
+2026-07-03 19:41:56,589 [INFO] Quadrant 1: slot=12 device=3 system=414 drug_count=1
+2026-07-03 19:41:56,589 [INFO] Quadrant 2: slot=19 device=111 system=414 drug_count=2
+2026-07-03 19:41:56,589 [INFO] Quadrant 3: slot=12 device=3 system=414 drug_count=1
+2026-07-03 19:41:56,589 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:41:56,614 [INFO] PVS HTTP Status: 200
+2026-07-03 19:41:58,617 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:58,617 [INFO] ================================================================================
+2026-07-03 19:41:58,617 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:41:58,617 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:41:59,357 [INFO]   Init HTTP status: 200
+2026-07-03 19:41:59,357 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:41:59,357 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:42:01,364 [INFO] Drop=16 Q=1 Slot=20 Device=3 System=414 DrugCount=1
+2026-07-03 19:42:01,364 [INFO] Drop=16 Q=2 Slot=11 Device=111 System=414 DrugCount=2
+2026-07-03 19:42:01,364 [INFO] Drop=16 Q=3 Slot=20 Device=3 System=414 DrugCount=1
+2026-07-03 19:42:01,364 [INFO] Drop=16 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:42:01,364 [INFO]   POSTing drop 16 (slots: 20, 11, 20)...
+2026-07-03 19:42:01,364 [INFO] ================================================================================
+2026-07-03 19:42:01,364 [INFO] PVS REQUEST: drop=16, station_type=21, station_id=21000
+2026-07-03 19:42:01,364 [INFO] Quadrant 1: slot=20 device=3 system=414 drug_count=1
+2026-07-03 19:42:01,364 [INFO] Quadrant 2: slot=11 device=111 system=414 drug_count=2
+2026-07-03 19:42:01,364 [INFO] Quadrant 3: slot=20 device=3 system=414 drug_count=1
+2026-07-03 19:42:01,364 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:42:01,384 [INFO] PVS HTTP Status: 200
+2026-07-03 19:42:03,386 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:42:03,386 [INFO] ================================================================================
+2026-07-03 19:42:03,386 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:42:03,386 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:42:04,103 [INFO]   Init HTTP status: 200
+2026-07-03 19:42:04,103 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:42:04,103 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:42:06,114 [INFO] Drop=17 Q=1 Slot=13 Device=3 System=414 DrugCount=4
+2026-07-03 19:42:06,115 [INFO] Drop=17 Q=2 Slot=13 Device=111 System=414 DrugCount=2
+2026-07-03 19:42:06,116 [INFO] Drop=17 Q=3 Slot=13 Device=3 System=414 DrugCount=1
+2026-07-03 19:42:06,117 [INFO] Drop=17 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:42:06,117 [INFO]   POSTing drop 17 (slots: 13, 13, 13)...
+2026-07-03 19:42:06,117 [INFO] ================================================================================
+2026-07-03 19:42:06,117 [INFO] PVS REQUEST: drop=17, station_type=21, station_id=21000
+2026-07-03 19:42:06,117 [INFO] Quadrant 1: slot=13 device=3 system=414 drug_count=4
+2026-07-03 19:42:06,117 [INFO] Quadrant 2: slot=13 device=111 system=414 drug_count=2
+2026-07-03 19:42:06,117 [INFO] Quadrant 3: slot=13 device=3 system=414 drug_count=1
+2026-07-03 19:42:06,117 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:42:06,165 [INFO] PVS HTTP Status: 200
+2026-07-03 19:42:08,168 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:42:08,168 [INFO] ================================================================================
+2026-07-03 19:42:08,168 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:42:08,168 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:42:08,305 [INFO]   Init HTTP status: 200
+2026-07-03 19:42:08,305 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:42:08,305 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:42:10,307 [INFO] Drop=18 Q=1 Slot=16 Device=3 System=414 DrugCount=1
+2026-07-03 19:42:10,307 [INFO] Drop=18 Q=2 Slot=15 Device=111 System=414 DrugCount=2
+2026-07-03 19:42:10,307 [INFO] Drop=18 Q=3 Slot=16 Device=3 System=414 DrugCount=1
+2026-07-03 19:42:10,307 [INFO] Drop=18 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:42:10,307 [INFO]   POSTing drop 18 (slots: 16, 15, 16)...
+2026-07-03 19:42:10,307 [INFO] ================================================================================
+2026-07-03 19:42:10,307 [INFO] PVS REQUEST: drop=18, station_type=21, station_id=21000
+2026-07-03 19:42:10,307 [INFO] Quadrant 1: slot=16 device=3 system=414 drug_count=1
+2026-07-03 19:42:10,307 [INFO] Quadrant 2: slot=15 device=111 system=414 drug_count=2
+2026-07-03 19:42:10,307 [INFO] Quadrant 3: slot=16 device=3 system=414 drug_count=1
+2026-07-03 19:42:10,307 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:42:31,360 [ERROR]     FAILED PVS POST: HTTPConnectionPool(host='172.29.0.68', port=13000): Max retries exceeded with url: /api/perform_vision_system_analysis (Caused by ConnectTimeoutError(<HTTPConnection(host='172.29.0.68', port=13000) at 0x2516c85aa50>, 'Connection to 172.29.0.68 timed out. (connect timeout=60)'))
+2026-07-03 19:42:31,368 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:42:52,411 [ERROR]   FAILED vision system init for drop 19: HTTPConnectionPool(host='172.29.0.68', port=13000): Max retries exceeded with url: /api/initiate_vision_system?station_type=21&station_id=21000&msg_id=2&cmd=init_camera (Caused by ConnectTimeoutError(<HTTPConnection(host='172.29.0.68', port=13000) at 0x2516c870810>, 'Connection to 172.29.0.68 timed out. (connect timeout=30)'))
+2026-07-03 19:42:52,411 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:42:54,462 [ERROR]   FAILED vision system init for drop 20: HTTPConnectionPool(host='172.29.0.68', port=13000): Max retries exceeded with url: /api/initiate_vision_system?station_type=21&station_id=21000&msg_id=2&cmd=init_camera (Caused by NewConnectionError("HTTPConnection(host='172.29.0.68', port=13000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-07-03 19:42:54,462 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:42:56,544 [ERROR]   FAILED vision system init for drop 21: HTTPConnectionPool(host='172.29.0.68', port=13000): Max retries exceeded with url: /api/initiate_vision_system?station_type=21&station_id=21000&msg_id=2&cmd=init_camera (Caused by NewConnectionError("HTTPConnection(host='172.29.0.68', port=13000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-07-03 19:42:57,121 [INFO] Using cached token
+2026-07-03 19:42:57,121 [INFO] Trying pack 164347 with device_id=2, system_id=414, company_id=4
+2026-07-03 19:42:57,121 [INFO]   Fetching details for pack 164347
+2026-07-03 19:42:57,947 [WARNING] device_id=2 generated 0 payloads, trying next device
+2026-07-03 19:42:57,961 [INFO] Trying pack 164347 with device_id=3, system_id=414, company_id=4
+2026-07-03 19:42:57,961 [INFO]   Fetching details for pack 164347
+2026-07-03 19:42:59,316 [INFO] Pack 164347 valid using device_id=3 (11 payloads generated)
+2026-07-03 19:42:59,317 [INFO] --- Processing pack 164347 (device=3, system=414) ---
+2026-07-03 19:42:59,317 [INFO]   Fetching details for pack 164347
+2026-07-03 19:42:59,870 [INFO]   Generated 11 drop payload(s)
+2026-07-03 19:42:59,870 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:01,935 [ERROR]   FAILED vision system init for drop 1: HTTPConnectionPool(host='172.29.0.68', port=13000): Max retries exceeded with url: /api/initiate_vision_system?station_type=21&station_id=21000&msg_id=2&cmd=init_camera (Caused by NewConnectionError("HTTPConnection(host='172.29.0.68', port=13000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-07-03 19:43:01,936 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:04,019 [ERROR]   FAILED vision system init for drop 2: HTTPConnectionPool(host='172.29.0.68', port=13000): Max retries exceeded with url: /api/initiate_vision_system?station_type=21&station_id=21000&msg_id=2&cmd=init_camera (Caused by NewConnectionError("HTTPConnection(host='172.29.0.68', port=13000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-07-03 19:43:04,020 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:06,092 [ERROR]   FAILED vision system init for drop 3: HTTPConnectionPool(host='172.29.0.68', port=13000): Max retries exceeded with url: /api/initiate_vision_system?station_type=21&station_id=21000&msg_id=2&cmd=init_camera (Caused by NewConnectionError("HTTPConnection(host='172.29.0.68', port=13000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-07-03 19:43:06,092 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:06,650 [INFO]   Init HTTP status: 200
+2026-07-03 19:43:06,663 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:06,672 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:43:08,681 [INFO] Drop=4 Q=1 Slot=10 Device=None System=414 DrugCount=1
+2026-07-03 19:43:08,681 [INFO] Drop=4 Q=2 Slot=11 Device=1 System=414 DrugCount=1
+2026-07-03 19:43:08,681 [INFO] Drop=4 Q=3 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:08,681 [INFO] Drop=4 Q=4 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:08,681 [INFO]   POSTing drop 4 (slots: 10, 11)...
+2026-07-03 19:43:08,681 [INFO] ================================================================================
+2026-07-03 19:43:08,681 [INFO] PVS REQUEST: drop=4, station_type=21, station_id=21000
+2026-07-03 19:43:08,681 [INFO] Quadrant 1: slot=10 device=None system=414 drug_count=1
+2026-07-03 19:43:08,681 [INFO] Quadrant 2: slot=11 device=1 system=414 drug_count=1
+2026-07-03 19:43:08,681 [INFO] Quadrant 3: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:08,681 [INFO] Quadrant 4: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:08,741 [INFO] PVS HTTP Status: 200
+2026-07-03 19:43:10,744 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:10,744 [INFO] ================================================================================
+2026-07-03 19:43:10,744 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:43:10,744 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:11,554 [INFO]   Init HTTP status: 200
+2026-07-03 19:43:11,556 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:11,558 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:43:13,559 [INFO] Drop=5 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:13,559 [INFO] Drop=5 Q=2 Slot=25 Device=None System=414 DrugCount=4
+2026-07-03 19:43:13,559 [INFO] Drop=5 Q=3 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:13,559 [INFO] Drop=5 Q=4 Slot=25 Device=3 System=414 DrugCount=3
+2026-07-03 19:43:13,559 [INFO]   POSTing drop 5 (slots: 25, 25)...
+2026-07-03 19:43:13,559 [INFO] ================================================================================
+2026-07-03 19:43:13,559 [INFO] PVS REQUEST: drop=5, station_type=21, station_id=21000
+2026-07-03 19:43:13,559 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:13,559 [INFO] Quadrant 2: slot=25 device=None system=414 drug_count=4
+2026-07-03 19:43:13,559 [INFO] Quadrant 3: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:13,559 [INFO] Quadrant 4: slot=25 device=3 system=414 drug_count=3
+2026-07-03 19:43:13,590 [INFO] PVS HTTP Status: 200
+2026-07-03 19:43:15,594 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:15,595 [INFO] ================================================================================
+2026-07-03 19:43:15,595 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:43:15,595 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:16,307 [INFO]   Init HTTP status: 200
+2026-07-03 19:43:16,307 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:16,307 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:43:18,309 [INFO] Drop=6 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:18,309 [INFO] Drop=6 Q=2 Slot=21 Device=None System=414 DrugCount=4
+2026-07-03 19:43:18,309 [INFO] Drop=6 Q=3 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:18,309 [INFO] Drop=6 Q=4 Slot=21 Device=3 System=414 DrugCount=3
+2026-07-03 19:43:18,309 [INFO]   POSTing drop 6 (slots: 21, 21)...
+2026-07-03 19:43:18,309 [INFO] ================================================================================
+2026-07-03 19:43:18,309 [INFO] PVS REQUEST: drop=6, station_type=21, station_id=21000
+2026-07-03 19:43:18,309 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:18,309 [INFO] Quadrant 2: slot=21 device=None system=414 drug_count=4
+2026-07-03 19:43:18,317 [INFO] Quadrant 3: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:18,317 [INFO] Quadrant 4: slot=21 device=3 system=414 drug_count=3
+2026-07-03 19:43:18,333 [INFO] PVS HTTP Status: 200
+2026-07-03 19:43:20,348 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:20,348 [INFO] ================================================================================
+2026-07-03 19:43:20,348 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:43:20,348 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:21,020 [INFO]   Init HTTP status: 200
+2026-07-03 19:43:21,020 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:21,020 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:43:23,025 [INFO] Drop=7 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:23,025 [INFO] Drop=7 Q=2 Slot=17 Device=None System=414 DrugCount=4
+2026-07-03 19:43:23,025 [INFO] Drop=7 Q=3 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:23,029 [INFO] Drop=7 Q=4 Slot=17 Device=3 System=414 DrugCount=3
+2026-07-03 19:43:23,029 [INFO]   POSTing drop 7 (slots: 17, 17)...
+2026-07-03 19:43:23,029 [INFO] ================================================================================
+2026-07-03 19:43:23,029 [INFO] PVS REQUEST: drop=7, station_type=21, station_id=21000
+2026-07-03 19:43:23,029 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:23,029 [INFO] Quadrant 2: slot=17 device=None system=414 drug_count=4
+2026-07-03 19:43:23,029 [INFO] Quadrant 3: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:23,029 [INFO] Quadrant 4: slot=17 device=3 system=414 drug_count=3
+2026-07-03 19:43:23,060 [INFO] PVS HTTP Status: 200
+2026-07-03 19:43:25,065 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:25,065 [INFO] ================================================================================
+2026-07-03 19:43:25,065 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:43:25,065 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:25,777 [INFO]   Init HTTP status: 200
+2026-07-03 19:43:25,777 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:25,777 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:43:27,780 [INFO] Drop=8 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:27,780 [INFO] Drop=8 Q=2 Slot=13 Device=None System=414 DrugCount=4
+2026-07-03 19:43:27,780 [INFO] Drop=8 Q=3 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:27,780 [INFO] Drop=8 Q=4 Slot=13 Device=3 System=414 DrugCount=3
+2026-07-03 19:43:27,780 [INFO]   POSTing drop 8 (slots: 13, 13)...
+2026-07-03 19:43:27,780 [INFO] ================================================================================
+2026-07-03 19:43:27,780 [INFO] PVS REQUEST: drop=8, station_type=21, station_id=21000
+2026-07-03 19:43:27,780 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:27,780 [INFO] Quadrant 2: slot=13 device=None system=414 drug_count=4
+2026-07-03 19:43:27,780 [INFO] Quadrant 3: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:27,780 [INFO] Quadrant 4: slot=13 device=3 system=414 drug_count=3
+2026-07-03 19:43:27,820 [INFO] PVS HTTP Status: 200
+2026-07-03 19:43:29,825 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:29,825 [INFO] ================================================================================
+2026-07-03 19:43:29,825 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:43:29,825 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:30,553 [INFO]   Init HTTP status: 200
+2026-07-03 19:43:30,553 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:30,553 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:43:32,570 [INFO] Drop=9 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:32,767 [INFO] Drop=9 Q=2 Slot=9 Device=None System=414 DrugCount=4
+2026-07-03 19:43:32,847 [INFO] Drop=9 Q=3 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:32,895 [INFO] Drop=9 Q=4 Slot=9 Device=3 System=414 DrugCount=3
+2026-07-03 19:43:32,942 [INFO]   POSTing drop 9 (slots: 9, 9)...
+2026-07-03 19:43:32,942 [INFO] ================================================================================
+2026-07-03 19:43:32,942 [INFO] PVS REQUEST: drop=9, station_type=21, station_id=21000
+2026-07-03 19:43:32,942 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:32,942 [INFO] Quadrant 2: slot=9 device=None system=414 drug_count=4
+2026-07-03 19:43:32,942 [INFO] Quadrant 3: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:32,942 [INFO] Quadrant 4: slot=9 device=3 system=414 drug_count=3
+2026-07-03 19:43:33,004 [INFO] PVS HTTP Status: 200
+2026-07-03 19:43:35,016 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:35,020 [INFO] ================================================================================
+2026-07-03 19:43:35,022 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:43:35,022 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:35,156 [INFO]   Init HTTP status: 200
+2026-07-03 19:43:35,156 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:35,156 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:43:37,164 [INFO] Drop=10 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:37,165 [INFO] Drop=10 Q=2 Slot=5 Device=None System=414 DrugCount=4
+2026-07-03 19:43:37,165 [INFO] Drop=10 Q=3 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:37,165 [INFO] Drop=10 Q=4 Slot=5 Device=3 System=414 DrugCount=3
+2026-07-03 19:43:37,165 [INFO]   POSTing drop 10 (slots: 5, 5)...
+2026-07-03 19:43:37,165 [INFO] ================================================================================
+2026-07-03 19:43:37,165 [INFO] PVS REQUEST: drop=10, station_type=21, station_id=21000
+2026-07-03 19:43:37,165 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:37,165 [INFO] Quadrant 2: slot=5 device=None system=414 drug_count=4
+2026-07-03 19:43:37,165 [INFO] Quadrant 3: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:37,165 [INFO] Quadrant 4: slot=5 device=3 system=414 drug_count=3
+2026-07-03 19:43:37,180 [INFO] PVS HTTP Status: 200
+2026-07-03 19:43:39,193 [INFO] PVS RESPONSE: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:39,193 [INFO] ================================================================================
+2026-07-03 19:43:39,193 [INFO]     PVS response: {'status': 'success', 'station_type': 21, 'station_id': 21000}
+2026-07-03 19:43:39,193 [INFO]   Initialising vision system (station_type=21, station_id=21000)...
+2026-07-03 19:43:40,093 [INFO]   Init HTTP status: 200
+2026-07-03 19:43:40,313 [INFO]   Init response: {
+  "status": "success",
+  "station_type": 21,
+  "station_id": 21000
+}
+2026-07-03 19:43:40,313 [INFO]   Waiting 5 seconds for vision system to become ready...
+2026-07-03 19:43:42,347 [INFO] Drop=11 Q=1 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:42,410 [INFO] Drop=11 Q=2 Slot=1 Device=None System=414 DrugCount=4
+2026-07-03 19:43:42,425 [INFO] Drop=11 Q=3 Slot=None Device=None System=414 DrugCount=0
+2026-07-03 19:43:42,425 [INFO] Drop=11 Q=4 Slot=1 Device=3 System=414 DrugCount=3
+2026-07-03 19:43:42,425 [INFO]   POSTing drop 11 (slots: 1, 1)...
+2026-07-03 19:43:42,425 [INFO] ================================================================================
+2026-07-03 19:43:42,425 [INFO] PVS REQUEST: drop=11, station_type=21, station_id=21000
+2026-07-03 19:43:42,425 [INFO] Quadrant 1: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:42,425 [INFO] Quadrant 2: slot=1 device=None system=414 drug_count=4
+2026-07-03 19:43:42,425 [INFO] Quadrant 3: slot=None device=None system=414 drug_count=0
+2026-07-03 19:43:42,425 [INFO] Quadrant 4: slot=1 device=3 system=414 drug_count=3
+2026-07-03 19:43:42,441 [INFO] PVS HTTP Status: 200
