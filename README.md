@@ -174,11 +174,20 @@ python pvs_automation.py
 # Test a specific pack
 python pvs_automation.py --test-pack 153084
 
+# Test a slot of specific pack
+python pvs_automation.py --test-pack 153084 --slot-number 22
+
 # Inspect payloads without posting
 python pvs_automation.py --test-pack 153084 --no-post
 
+# Inspect payloads for specific slot without posting
+python pvs_automation.py --test-pack 153084 --no-post --slot-number 22
+
 # Save payloads for inspection
 python pvs_automation.py --test-pack 153084 --no-post -s payloads_output
+
+# Save payloads for inspection for specific slot
+python pvs_automation.py --test-pack 153084 --no-post --slot-number 22 -s payloads_output
 
 # Run for a date range
 python pvs_automation.py --date last_3_days
